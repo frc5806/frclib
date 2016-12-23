@@ -21,5 +21,8 @@ module cim() {
     }
 }
 
+module hex(diam,length) {
+    cylinder(r=diam/2,h=length,$fn=6);
+}
 
-cim();
+hex(1/2,10);
